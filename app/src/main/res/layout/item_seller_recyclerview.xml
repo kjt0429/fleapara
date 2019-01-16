@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="437px"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/manage_box">
+
+    <ImageView
+        android:id="@+id/marketImage"
+        android:layout_width="551px"
+        android:layout_height="383px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23px"
+        android:src="@drawable/img_marekt_temp" />
+
+    <TextView
+        android:id="@+id/stateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="58px"
+        android:layout_alignBottom="@+id/marketImage"
+        android:layout_alignRight="@+id/marketImage"
+        android:background="@color/black"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="대기중"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textStyle="bold"
+        android:text="이름"
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/marketImage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/marketImage" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="마감기간"
+        android:id="@+id/deadlineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/marketImage" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="참가자수"
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deadlineTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/marketImage" />
+
+</RelativeLayout>

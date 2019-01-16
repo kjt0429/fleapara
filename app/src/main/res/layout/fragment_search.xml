@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:textColor="@color/colorTextDarkGray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!--상단 회색줄-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98px"
+            android:text="상품 카테고리"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/goodsBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_below="@+id/titleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="104px"
+            android:background="@drawable/search_goods" />
+
+        <Button
+            android:id="@+id/kitchenBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@id/goodsBtn"
+            android:layout_marginRight="95px"
+            android:layout_toLeftOf="@id/goodsBtn"
+            android:background="@drawable/search_kitchen" />
+
+        <Button
+            android:id="@+id/clothesBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/goodsBtn"
+            android:layout_marginLeft="95px"
+            android:layout_toRightOf="@id/goodsBtn"
+            android:background="@drawable/search_clothes" />
+
+        <Button
+            android:id="@+id/phonecaseBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_below="@+id/goodsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51px"
+            android:background="@drawable/search_phonecase" />
+
+        <Button
+            android:id="@+id/flowerBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/phonecaseBtn"
+            android:layout_marginRight="95px"
+            android:layout_toLeftOf="@+id/phonecaseBtn"
+            android:background="@drawable/search_flower" />
+
+        <Button
+            android:id="@+id/fashionBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/phonecaseBtn"
+            android:layout_marginLeft="95px"
+            android:layout_toRightOf="@+id/phonecaseBtn"
+            android:background="@drawable/search_fashion" />
+
+        <Button
+            android:id="@+id/candleBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_below="@+id/phonecaseBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51px"
+            android:background="@drawable/search_candle" />
+
+        <Button
+            android:id="@+id/toyBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/candleBtn"
+            android:layout_marginRight="95px"
+            android:layout_toLeftOf="@+id/candleBtn"
+            android:background="@drawable/search_toy" />
+
+        <Button
+            android:id="@+id/foodBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/candleBtn"
+            android:layout_marginLeft="95px"
+            android:layout_toRightOf="@+id/candleBtn"
+            android:background="@drawable/search_food" />
+
+        <Button
+            android:id="@+id/animalBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_below="@+id/candleBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51px"
+            android:background="@drawable/search_animal" />
+
+        <Button
+            android:id="@+id/beautyBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/animalBtn"
+            android:layout_marginRight="95px"
+            android:layout_toLeftOf="@+id/animalBtn"
+            android:background="@drawable/search_beauty" />
+
+        <Button
+            android:id="@+id/interiorBtn"
+            android:layout_width="206px"
+            android:layout_height="206px"
+            android:layout_alignTop="@+id/animalBtn"
+            android:layout_marginLeft="95px"
+            android:layout_toRightOf="@+id/animalBtn"
+            android:background="@drawable/search_interior" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

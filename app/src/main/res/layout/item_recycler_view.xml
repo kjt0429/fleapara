@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="727px"
+    android:layout_height="720px"
+    android:layout_marginLeft="35px"
+    android:background="@drawable/img_market_background"
+    android:orientation="vertical">
+
+    <!--마켓이미지-->
+    <ImageView
+        android:id="@+id/ImageView_market"
+        android:layout_width="666px"
+        android:layout_height="462px"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="28px"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_marekt_temp" />
+
+    <!--마켓 이름-->
+    <TextView
+        android:id="@+id/TextView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView_market"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="21px"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--한줄 소개-->
+    <TextView
+        android:id="@+id/TextView_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_name"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="2px"
+        android:text="어쩌고 저쩌고 한줄 문구"
+        android:textColor="@color/colorTextGray" />
+
+    <TextView
+        android:id="@+id/TextView_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_info"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="2px"
+        android:text="미등록" />
+
+
+    <!--지역명-->
+    <LinearLayout
+        android:layout_width="105px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/ImageView_market"
+        android:layout_alignTop="@id/ImageView_market"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/TextView_area"
+            android:layout_width="wrap_content"
+            android:layout_height="58px"
+
+            android:background="@color/colorGreen"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="지역"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>

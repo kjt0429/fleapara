@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddMarketActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:background="#FFFFFF"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="313px"
+                android:layout_height="71px"
+                android:layout_gravity="center"
+                android:src="@drawable/img_toolbar_logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"></LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="115px"
+        android:background="@color/colorGray"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="마켓 등록하기"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/nameRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="행사명"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="739px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background"
+                    android:hint="행사명을 입력해주세요"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/areaRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_below="@+id/nameRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:id="@+id/areaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="지역"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="739px"
+                    android:layout_height="101px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background">
+
+                    <Spinner
+                        android:id="@+id/areaSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/deadlineRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_below="@id/areaRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="마감일"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deadlineTextView"
+                    android:layout_width="739px"
+                    android:layout_height="101px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background"
+                    android:gravity="center_vertical"
+                    android:hint="날짜를 입력해주세요."
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/costRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_below="@id/deadlineRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:id="@+id/costTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="비용"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/costEditText"
+                    android:layout_width="739px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background"
+                    android:hint="비용을 입력해주세요."
+                    android:inputType="number"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/categoryRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_below="@+id/costRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="카테고리"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="739px"
+                    android:layout_height="101px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background">
+
+                    <Spinner
+                        android:id="@+id/categorySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lineInfoRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="101px"
+                android:layout_below="@id/categoryRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="53px">
+
+                <TextView
+                    android:id="@+id/lineinfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="한줄소개"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/lineinfoEditText"
+                    android:layout_width="739px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="69px"
+                    android:background="@drawable/img_edittext_background"
+                    android:hint="한줄 소개를 적어주세요."
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/infoRelativeLayout"
+                android:layout_width="945px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineInfoRelativeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70px">
+
+                <TextView
+                    android:id="@+id/infoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="상세설명"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/infoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="330px"
+                    android:layout_below="@id/infoTextView"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_explain_box"
+                    android:gravity="top"
+                    android:hint="행사에 대한 설명을 기재해주세요."
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imageRelativeLayout"
+                android:layout_width="945px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/infoRelativeLayout"
+                android:layout_marginLeft="62px"
+                android:layout_marginTop="84px">
+
+                <TextView
+                    android:id="@+id/imageTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="대표 이미지"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="467px"
+                    android:layout_height="325px"
+                    android:layout_below="@id/imageTextView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_marekt_temp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27px"
+                    android:layout_marginTop="90px"
+
+                    android:layout_toRightOf="@id/profile_img">
+
+                    <TextView
+                        android:id="@+id/galleryBtn"
+                        android:layout_width="188px"
+                        android:layout_height="79px"
+                        android:background="@drawable/img_profile_add_button"
+                        android:gravity="center"
+                        android:text="파일첨부"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/galleryBtn"
+                        android:layout_marginTop="18px"
+                        android:text="가로 1080px 세로 750px 이상"
+                        android:textColor="@color/colorMiddleGray"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="151px"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/imageRelativeLayout"
+                android:layout_marginTop="120px"
+                android:background="@color/colorGreen"
+                android:text="등록하기"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

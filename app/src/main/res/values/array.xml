@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area">
+        <item>서울</item>
+        <item>경기</item>
+        <item>대전</item>
+        <item>대구</item>
+        <item>부산</item>
+        <item>광주</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>패션잡화</item>
+        <item>뷰티</item>
+        <item>캔들</item>
+        <item>휴대폰케이스</item>
+        <item>문구</item>
+        <item>인테리어</item>
+        <item>식품</item>
+        <item>의류</item>
+        <item>꽃</item>
+        <item>장난감</item>
+        <item>반려동물</item>
+        <item>주방</item>
+    </string-array>
+</resources>

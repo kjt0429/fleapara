@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "78493859101",
+    "firebase_url": "https://fleapara.firebaseio.com",
+    "project_id": "fleapara",
+    "storage_bucket": "fleapara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78493859101:android:e10307dc89b9a6bc",
+        "android_client_info": {
+          "package_name": "kmu.ac.kr.fleapara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78493859101-f7bjqtp519m3497l7jbfhl7ohplcp0dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kmu.ac.kr.fleapara",
+            "certificate_hash": "3d510f4cf96fc6d6287ba9a32ae6394ed02de913"
+          }
+        },
+        {
+          "client_id": "78493859101-qfmi0rpbptjl9ssqo0ts19fpgchiq3ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6TpTO08Yj_y5ImuZEGPhMNLjY06_FeQc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78493859101-qfmi0rpbptjl9ssqo0ts19fpgchiq3ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- 여기서 추가 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="435px"></android.support.v4.view.ViewPager>
+
+            <com.pm10.library.CircleIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="380px" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/deadline_icon"
+                android:layout_width="32px"
+                android:layout_height="60px"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="53px"
+                android:src="@drawable/img_deadline_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="47px"
+                android:layout_toRightOf="@+id/deadline_icon"
+                android:text="마감임박"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/deadlineIV"
+                android:layout_width="23px"
+                android:layout_height="43px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32px"
+                android:layout_marginTop="61px"
+                android:src="@drawable/img_more_btn" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/new_icon"
+                android:layout_width="58px"
+                android:layout_height="60px"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="53px"
+                android:src="@drawable/img_new_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="47px"
+                android:layout_toRightOf="@+id/new_icon"
+                android:text="신규 플리마켓"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/newIV"
+                android:layout_width="23px"
+                android:layout_height="43px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32px"
+                android:layout_marginTop="61px"
+                android:src="@drawable/img_more_btn" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</ScrollView>

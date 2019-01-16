@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="kmu.ac.kr.fleapara.activity.MarketActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:background="#FFFFFF"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="313px"
+                android:layout_height="71px"
+                android:layout_gravity="center"
+                android:src="@drawable/img_toolbar_logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"></LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="749px"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_market_impo" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="88px"
+                android:text="플리마켓 이름"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lineinfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="42px"
+                android:text="행사 한줄 소개"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="55px"
+                android:background="@color/colorGray"></LinearLayout>
+
+            <!-- TextView RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/positionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="70px"
+                    android:text="위치"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/area_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="70px"
+                    android:layout_toRightOf="@+id/positionTV"
+                    android:text=""
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/positionTV"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="35px"
+                    android:text="모집마감"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/area_TV"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_toRightOf="@+id/dateTV"
+                    android:text=""
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/costTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTV"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="35px"
+                    android:text="참가비"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cost_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_TV"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_toRightOf="@+id/costTV"
+                    android:text=""
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/categoryTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/costTV"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="35px"
+                    android:text="카테고리"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/category_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cost_TV"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_toRightOf="@+id/categoryTV"
+                    android:text=""
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="70px"
+                android:background="@color/colorGray"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/infoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="40px"
+                android:text="행사 설명"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="15px"
+                android:text="행사 내용" />
+
+            <RelativeLayout
+                android:layout_width="1012px"
+                android:layout_height="359px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:background="@drawable/img_host_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/directorTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30px"
+                    android:text="주최자"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/host_face_iv"
+                    android:layout_width="133px"
+                    android:layout_height="133px"
+                    android:layout_below="@+id/directorTV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25px"
+                    android:src="@drawable/img_host_face" />
+
+                <TextView
+                    android:id="@+id/nickname_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/host_face_iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15px"
+                    android:text="[기관명]"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/email_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nickname_TV"
+                    android:layout_centerHorizontal="true"
+                    android:text="sample@gmail.com"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sellerNumTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="70px"
+                    android:text="참가 신청 인원"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sellerNum_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="70px"
+                    android:layout_toRightOf="@id/sellerNumTV"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/applyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="151px"
+                android:background="@color/colorGreen"
+                android:text="참가 신청 하기"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

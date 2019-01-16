@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="437px">
+
+    <!--프로필이미지-->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="551px"
+        android:layout_height="383px"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="23px"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_marekt_temp" />
+
+    <!--지역이름-->
+    <LinearLayout
+        android:layout_width="105px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/profileImageView"
+        android:layout_alignTop="@id/profileImageView"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/areaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="58px"
+            android:background="@color/colorGreen"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="지역"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profileImageView"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@id/profileImageView"
+        android:text="제목"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lineinfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/profileImageView"
+        android:text="한줄소개"
+        android:textColor="#a5a4a4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/costTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineinfoTextView"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="23px"
+        android:layout_toRightOf="@id/profileImageView"
+        android:text="3,000원"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"></LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.OrganizeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:background="#FFFFFF"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="313px"
+                android:layout_height="71px"
+                android:layout_gravity="center"
+                android:src="@drawable/img_toolbar_logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"></LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마켓 이름"
+            android:textColor="@color/colorTextDarkGray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!--상단 회색줄-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <RelativeLayout
+        android:id="@+id/managebox"
+        android:layout_width="1012px"
+        android:layout_height="529px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35px"
+        android:background="@drawable/manage_box">
+
+        <TextView
+            android:id="@+id/attedNum2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48px"
+            android:text="현재까지 총 \n이 신청했습니다."
+            android:textColor="@color/colorTextDarkGray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/attedNumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/attedNum2TextView"
+            android:layout_toLeftOf="@+id/attedNum2TextView"
+            android:text="0 명 "
+            android:textColor="#d83333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attedNumTextView"
+            android:layout_marginLeft="270px"
+            android:layout_marginTop="77px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pushBtn"
+                android:layout_width="175px"
+                android:layout_height="175px"
+
+                android:background="@drawable/ic_push" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pushBtn"
+                android:layout_marginTop="6dp"
+                android:text="푸쉬 메시지"
+                android:textColor="@color/colorTextGray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/attedNumTextView"
+            android:layout_marginRight="270px"
+            android:layout_marginTop="77px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/excelBtn"
+                android:layout_width="175px"
+                android:layout_height="175px"
+                android:background="@drawable/ic_excel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pushBtn"
+                android:layout_marginTop="6dp"
+                android:text="엑셀 보내기"
+                android:textColor="@color/colorTextGray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:background="@color/colorGreen"
+        android:paddingBottom="5dp"
+        android:paddingLeft="68dp"
+        android:paddingTop="5dp"
+        android:text="신청 인원"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35px">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

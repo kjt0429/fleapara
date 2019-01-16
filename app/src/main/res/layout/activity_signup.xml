@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SignupActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:background="#FFFFFF"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="313px"
+                android:layout_height="71px"
+                android:layout_gravity="center"
+                android:src="@drawable/img_toolbar_logo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorMiddleGray" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppBarLayout"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="115px"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="회원정보 입력"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/LinearLayout1"
+        android:background="@color/colorMiddleGray" />
+
+    <RadioGroup
+        android:layout_below="@id/LinearLayout2"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:buttonTint="@color/colorGreen"
+            android:checked="true"
+            android:text="셀러"
+            android:textColor="#404040"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:buttonTint="@color/colorGreen"
+            android:text="주최자"
+            android:textColor="#404040"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="100px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="272px"
+            android:layout_height="101px"
+            android:gravity="center"
+            android:text="이  름"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/nameEditText"
+            android:layout_width="739px"
+            android:layout_height="110px"
+            android:hint="이름을 입력해주세요."
+
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@color/colorGray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/telLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLayout"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/telTextView"
+            android:layout_width="272px"
+            android:layout_height="101px"
+            android:gravity="center"
+            android:text="전화 번호"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/telEditText"
+            android:layout_width="739px"
+            android:layout_height="110px"
+            android:hint="숫자만 입력해주세요."
+
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@color/colorGray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="151px"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGreen"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
